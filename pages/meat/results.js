@@ -18,6 +18,7 @@ export default function Results(){
             {animalresults[item].desc}
         </h3>
 
+
         <button onClick={
                 ()=>r.replace({
                     pathname:"/meat",
