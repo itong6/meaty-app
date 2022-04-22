@@ -3,6 +3,7 @@ import { animalresults } from "../../data/res_content";
 
 export default function Results(){
 
+
     const r = useRouter();
     const {item} = r.query;
 
@@ -17,7 +18,6 @@ export default function Results(){
         <h3>
             {animalresults[item].desc}
         </h3>
-
 
         <button onClick={
                 ()=>r.replace({

@@ -2,17 +2,17 @@ import {useRouter} from 'next/router';
 import {cat0Imgs, cat1Imgs, cat2Imgs, chicken1Imgs,cow1Imgs, pig1Imgs } from '../../data/animal_content';
 import Display from '../../Display';
 
+
 export default function Meat(){
     const r = useRouter();
     const {page, type} = r.query;
-
-
+    
 
     if(page === '2'){
         return <div>
             <h1>Disclaimer</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"meat",
                     query:{
                      page:Number(page)+1
@@ -23,10 +23,10 @@ export default function Meat(){
     }
 
     if(page === '3'){
-        return <div>
+        return <div class='bodycont'>
             <h1>Select an Animal</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"/meat",
                     query:{
                         page:1,
@@ -34,7 +34,7 @@ export default function Meat(){
                 })
             }> Go back</button>
             
-            <Display arr={cat0Imgs} />
+            <Display  arr={cat0Imgs} />
 
         </div>
         
@@ -44,7 +44,7 @@ export default function Meat(){
         return <div>
             <h1>Select a Chicken</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"/meat",
                     query:{
                         page:1,
@@ -62,7 +62,7 @@ export default function Meat(){
         return <div>
             <h1>Select a Cow</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"/meat",
                     query:{
                         page:1,
@@ -80,7 +80,7 @@ export default function Meat(){
         return <div>
             <h1>Select a Pig</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"/meat",
                     query:{
                         page:1,
@@ -98,7 +98,7 @@ export default function Meat(){
         return <div>
             <h1>Select a Stun Method</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"/meat",
                     query:{
                         page:1,
@@ -116,7 +116,7 @@ export default function Meat(){
         return <div>
             <h1>Select a Stun Method</h1>
             <button onClick={
-                ()=>r.replace({
+                ()=>r.push({
                     pathname:"/meat",
                     query:{
                         page:1,
@@ -125,6 +125,24 @@ export default function Meat(){
             }> Go back</button>
             
             <Display arr={cat2Imgs} />
+
+        </div>
+        
+    }
+
+    if(type === "Bath"){
+        return <div>
+            <h1>Bath</h1>
+            <button onClick={
+                ()=>r.push({
+                    pathname:"/meat",
+                    query:{
+                        page:1,
+                    }
+                })
+            }> Go back</button>
+            
+            <img src="/bath.svg" />
 
         </div>
         
@@ -144,7 +162,7 @@ export default function Meat(){
         }> Console log router</button> */}
 
         <button onClick={
-            ()=>r.replace({
+            ()=>r.push({
                 pathname:"/meat",
                 query:{
                     page:page === undefined ? 1 : Number(page)+1,

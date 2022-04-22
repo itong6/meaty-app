@@ -26,15 +26,16 @@ export const cat0 = {
 
 export const cat0Imgs = [
 {
-    img:"../animal_heads/animal1.jpeg",
+    title:"Chicken",
+    img:"../ch/head/ch_head1.svg",
     route:"chicken"
 },
 {
-    img:"../animal_heads/animal2.jpeg",
+    img:"../cow/head/c_head1.svg",
     route:"cow",
 },
 {
-    img:"../animal_heads/animal3.jpeg",
+    img:"../pig/head/p_head1.svg",
     route:"pig"
 }
 ]
@@ -71,45 +72,45 @@ export const cat2Imgs = [
 
 export const chicken1Imgs = [
     {
-        img:"/chicken.png",
+        img:"../ch/head/ch_head1.svg",
         route:"chicken1"
     },
     {
-        img:"/chicken.png",
+        img:"../ch/head/ch_head2.svg",
         route:"chicken2",
     },
     {
-        img:"/chicken.png",
+        img:"../ch/head/ch_head3.svg",
         route:"chicken3"
     }
 ]
 
 export const cow1Imgs = [
     {
-        img:"/cow.png",
+        img:"../cow/head/c_head1.svg",
         route:"cow1"
     },
     {
-        img:"/cow.png",
+        img:"../cow/head/c_head2.svg",
         route:"cow2",
     },
     {
-        img:"/cow.png",
+        img:"../cow/head/c_head3.svg",
         route:"cow3"
     }
 ]
 
 export const pig1Imgs = [
     {
-        img:"/pig.png",
+        img:"../pig/head/p_head1.svg",
         route:"pig1"
     },
     {
-        img:"/pig.png",
+        img:"../pig/head/p_head2.svg",
         route:"pig2",
     },
     {
-        img:"/pig.png",
+        img:"../pig/head/p_head3.svg",
         route:"pig3"
     }
 ]
