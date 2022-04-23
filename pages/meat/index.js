@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router';
 import {cat0Imgs, cat1Imgs, cat2Imgs, chicken1Imgs,cow1Imgs, pig1Imgs } from '../../data/animal_content';
 import Display from '../../Display';
+import Results from './results';
 
 
 export default function Meat(){
@@ -35,7 +36,7 @@ export default function Meat(){
             }> Go back</button>
             
             <Display  arr={cat0Imgs} />
-
+            <Results />
         </div>
         
     }

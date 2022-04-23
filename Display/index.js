@@ -32,13 +32,16 @@ export default function Display({
 }){
 
   const r = useRouter();
+  const {page, type} = r.query
   return <DispCont>
     {
       arr.map((o,i)=><ImgCont onClick={
         ()=>r.push({
-          pathname:"/meat/results",
+          pathname:"/meat",
           query:{
             item:o.route,
+            page:page,
+            type:type
           }
         })
       }>

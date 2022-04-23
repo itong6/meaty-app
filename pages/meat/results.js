@@ -1,14 +1,21 @@
 import { useRouter } from "next/router";
 import { animalresults } from "../../data/res_content";
 
+import styled from 'styled-components';
 export default function Results(){
 
 
     const r = useRouter();
-    const {item} = r.query;
+    const {page, type, item} = r.query;
 
+    if(item === undefined){return null}
     return<div>
-
+        <Overlay onClick={
+            ()=>r.push({pathname:'/meat', query:{
+                type:type,
+                page:page
+            }})
+        }></Overlay>
         <img src={animalresults[item].img} />
 
         <h1>
@@ -31,3 +38,12 @@ export default function Results(){
 
     </div>
 }
+
+const Overlay = styled.div`
+position:fixed;
+background: rgba(0,0,0,0.25);
+height:100vh;
+width:100vw;
+left:0;
+top:0;
+`;
