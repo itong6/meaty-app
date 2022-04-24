@@ -42,8 +42,8 @@ export default function Results(){
                 </p>
                 <SelectCont>
                     <Select onClick={
-                            ()=>r.replace({
-                                pathname:"/meat",
+                            ()=>r.push({
+                                pathname:"/meat/",
                                 query:{
                                 type:animalresults[item].select
                                 }

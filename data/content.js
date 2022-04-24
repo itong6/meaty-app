@@ -10,7 +10,11 @@ export const subheading = [
     "Select a cow.",
     "Select a pig.",
     "Select a stunning method",
-    "Click on Claudia to drown her."
+    "Click on Claudia to drown her.",
+    "Click the knife to slit her throat",
+    "Defeather Claudia by clicking her feathers",
+    "Click on the cleaver until Claudia is decapitated",
+    "Disembowel Claudia by clicking on the organs"
 ]
 
 export const button = [
@@ -22,5 +26,10 @@ export const button = [
 ]
 
 export const chicken_indicator = [
-    "../indicator/ch/indicator1.svg"
+    "../indicator/ch/indicator0.svg",
+    "../indicator/ch/indicator1.svg",
+    "../indicator/ch/indicator2.svg",
+    "../indicator/ch/indicator3.svg",
+    "../indicator/ch/indicator4.svg",
+    "../indicator/ch/indicator5.svg",
 ]
