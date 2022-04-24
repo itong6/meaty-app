@@ -1,30 +1,43 @@
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
+import { catImgs } from '../data/selection_content';
 
 
 const DispCont = styled.div`
 display:flex;
 flex-direction:column;
-height:100vh;
+align-items:center;
+height:82vh;
+width:41vw;
+
 border: red 2px solid;
 `;
 
 const ImgCont = styled.div`
 display:flex;
-flex-direction: column;
-justify-content: center;
-width:200px;
-height:200px;
-border:#DDD solid 7px;
-border-radius:10px;
-margin:50px;
-padding:50px
+flex-direction:column;
+align-item:center;
+justify-content:center;
+width:160px;
+height:160px;
+border:#000000 solid 3px;
+border-radius:20px;
+margin-bottom:2rem;
+margin-left:2rem;
+padding:2rem;
 `;
 
 const DispImg = styled.img`
 object-fit:cover
 width:100%;
 height:100%;
+`;
+
+const DispTitle = styled.text`
+display:flex;
+font-family: Ubuntu;
+justify-content:center;
+margin-bottom:1rem;
 `;
 
 export default function Display({
@@ -45,7 +58,7 @@ export default function Display({
           }
         })
       }>
-      <h3>animal</h3>
+      <DispTitle>{catImgs[i].title}</DispTitle>
       <DispImg src={o.img} />
       </ImgCont>)
     }
