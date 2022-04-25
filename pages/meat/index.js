@@ -96,7 +96,7 @@ export default function Meat(){
 
     const BathChicken = styled.img`
     position:absolute;
-    top:250px;
+    top:18rem;
     height:30vh;
     width:100vw;
     `;
@@ -117,7 +117,7 @@ export default function Meat(){
 
     const Bath2 = styled.img`
     position:absolute;
-    top:9rem;
+    top:8rem;
     width:100vw;
     height:70vh;
     opacity:95%;
@@ -235,8 +235,8 @@ export default function Meat(){
 
     const TargetZone = styled.div`
     position:absolute;
-    top:13rem;
-    right:8rem;
+    top:14.5rem;
+    left:21rem;
     height:40px;
     width:40px;
     border-radius:50px;
