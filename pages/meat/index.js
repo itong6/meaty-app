@@ -470,7 +470,7 @@ export default function Meat(){
     p {
 			margin-bottom: 1rem;
       margin-left: 2rem;
-			margin-right: 2rem
+			margin-right: 2.5rem;
       font-size: 1.25rem;
       font-weight: bold;
     }
@@ -2010,10 +2010,10 @@ export default function Meat(){
             }}>
                 <div className='thirdTile'>
                     <h1>Did you know...</h1>
-                    <p><a href='https://www.aipl.arsusda.gov/kc/cowfacts.html' target='_blank'>...the first cow arrived in North America in 1611?</a></p>
-                    <p><a href='https://www.britannica.com/animal/cow' target='_blank'>... both female and male cows have horns?</a></p>
-                    <p><a href='https://www.coolkidfacts.com/cow-facts/' target='_blank'>... cows eat their "vomit" multiple times to digest food?</a></p>
-                    <p className='learnMore'><a href='https://en.wikipedia.org/wiki/Cattle' target='_blank'>Learn more about cows</a></p>
+							<p><a href='https://kids.nationalgeographic.com/animals/mammals/facts/pig' target='_blank'>... pigs are smarter than dogs?</a></p>
+							<p><a href='https://spca.bc.ca/news/fun-facts-about-pigs/' target='_blank'>... pigs don't sweat?</a></p>
+							<p><a href='https://www.britannica.com/animal/pig-mammal-group' target='_blank'>... China has the largest population of pigs?</a></p>
+							<p className='learnMore'><a href='https://en.wikipedia.org/wiki/Pig' target='_blank'>Learn more about pigs</a></p>
                 </div>
             </motion.div>
         </Container>
