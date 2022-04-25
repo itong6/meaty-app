@@ -8,7 +8,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content: center;
-height:82vh;
+height:80vh;
 width:35vw;
 `;
 

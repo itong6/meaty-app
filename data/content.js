@@ -1,7 +1,7 @@
 export const heading = [
     "MEATY",
     "The following content contains material that some  people may find upsetting.",
-    "Current Objective",
+    "Current Objective:",
 ]
 
 export const subheading = [
