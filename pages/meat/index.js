@@ -64,6 +64,11 @@ export default function Meat(){
     margin-right:1rem;
     `;
 
+    const LogoIcon = styled.img`
+    width:37px;
+    height:37px;
+    `;
+
     const ContinueCont = styled.div`
     display:flex;
     justify-content:end;
@@ -559,7 +564,7 @@ export default function Meat(){
                             page:1
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
         <HeadCont>
                 <H1>{heading[2]}</H1>
@@ -582,7 +587,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
@@ -607,7 +612,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
@@ -632,7 +637,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
@@ -657,7 +662,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
@@ -682,7 +687,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
@@ -707,7 +712,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[0]} />
@@ -742,7 +747,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[0]} />
@@ -777,7 +782,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[0]} />
@@ -811,7 +816,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[1]} />
@@ -847,14 +852,14 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[1]} />
             </IndicatorCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
-                <P>{subheading[6]}</P>
+                <P>{subheading[18]}</P>
             </HeadCont>
             <ChKillCont>
                 <KnifePig src="../pig/knife/stunned.svg" />
@@ -881,14 +886,14 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
             </IndicatorCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
-                <P>{subheading[16]}</P>
+                <P>{subheading[18]}</P>
             </HeadCont>
             <ChKillCont>
                 <KnifePig src="../pig/knife/slit_throat.svg" />
@@ -918,14 +923,14 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
             </IndicatorCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
-                <P>{subheading[8]}</P>
+                <P>{subheading[17]}</P>
             </HeadCont>
             <CowKillCont>
                 <DecapitateCow src="../pig/knife/slit_throat.svg" />
@@ -951,14 +956,14 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
             </IndicatorCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
-                <P>{subheading[8]}</P>
+                <P>{subheading[17]}</P>
             </HeadCont>
             <CowKillCont>
                 <DecapitateCow src="../pig/knife/slit_throat.svg" />
@@ -984,14 +989,14 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
             </IndicatorCont>
             <HeadCont>
                 <H1>{heading[2]}</H1>
-                <P>{subheading[16]}</P>
+                <P>{subheading[17]}</P>
             </HeadCont>
             <CowKillCont>
                 <DecapitateCow src="../pig/decapitate/decapitated.svg" />
@@ -1020,7 +1025,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[3]} />
@@ -1053,7 +1058,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[4]} />
@@ -1088,7 +1093,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[0]} />
@@ -1123,7 +1128,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[1]} />
@@ -1160,7 +1165,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[1]} />
@@ -1194,7 +1199,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
@@ -1231,7 +1236,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
@@ -1264,7 +1269,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[2]} />
@@ -1297,7 +1302,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[3]} />
@@ -1333,7 +1338,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[3]} />
@@ -1366,7 +1371,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={indicator[4]} />
@@ -1401,7 +1406,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[0]} />
@@ -1435,7 +1440,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[1]} />
@@ -1472,7 +1477,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[1]} />
@@ -1506,7 +1511,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[2]} />
@@ -1543,7 +1548,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[2]} />
@@ -1577,7 +1582,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[3]} />
@@ -1613,7 +1618,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[3]} />
@@ -1646,7 +1651,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[3]} />
@@ -1679,7 +1684,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[4]} />
@@ -1715,7 +1720,7 @@ export default function Meat(){
                             page:1,
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[4]} />
@@ -1748,7 +1753,7 @@ export default function Meat(){
                             type: 'end2'
                         }
                     })
-                }> <img src='/settings.svg' /></div>
+                }> <LogoIcon src='/logo.svg' /></div>
             </SettingCont>
             <IndicatorCont>
                 <img src={chicken_indicator[5]} />
@@ -1801,7 +1806,10 @@ export default function Meat(){
                     <p className='emoji'>🐔 💀 🍗</p>
                     <p>Want to slaughter another animal?</p>
                     <button onClick={() => r.push({
-                        pathname: '/meat'
+                        pathname: '/meat',
+                        query:{
+                            page:1
+                        }
                     })}>RESTART</button>
                 </div>
             </motion.div>
@@ -1879,7 +1887,10 @@ export default function Meat(){
                     <p className='emoji'>🐮 💀 🍔</p>
                     <p>Want to slaughter another animal?</p>
                     <button onClick={() => r.push({
-                        pathname: '/meat'
+                        pathname: '/meat',
+                        query:{
+                            page:1
+                        }
                     })}>RESTART</button>
                 </div>
             </motion.div>
@@ -1955,7 +1966,10 @@ export default function Meat(){
                     <p className='emoji'>🐷 💀 🍔</p>
                     <p>Want to slaughter another animal?</p>
                     <button onClick={() => r.push({
-                        pathname: '/meat'
+                        pathname: '/meat',
+                        query:{
+                            page:1
+                        }
                     })}>RESTART</button>
                 </div>
             </motion.div>
