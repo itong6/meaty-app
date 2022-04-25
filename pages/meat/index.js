@@ -73,6 +73,7 @@ export default function Meat(){
     display:flex;
     justify-content:end;
     width:100vw;
+    height:0vh;
     `;
 
     const Continue = styled.button`
@@ -114,7 +115,7 @@ export default function Meat(){
 
     const BathChicken2 = styled.img`
     position:absolute;
-    top:13rem;
+    top:12rem;
     height:340px;
     width:100vw;
     z-index:-1;
@@ -122,7 +123,7 @@ export default function Meat(){
 
     const Bath2 = styled.img`
     position:absolute;
-    top:8rem;
+    top:10rem;
     width:100vw;
     height:70vh;
     opacity:95%;
@@ -138,8 +139,8 @@ export default function Meat(){
 
     const KnifeChicken = styled.img`
     transform:rotate(-90deg);
-    width:500px;
-    height:500px;
+    width:400px;
+    height:400px;
     padding:0rem;
     `;
 
@@ -182,8 +183,8 @@ export default function Meat(){
 
     const DecapitateChicken = styled.img`
     transform:rotate(-90deg);
-    width:500px;
-    height:500px;
+    width:400px;
+    height:400px;
     `;
 
     const Cleaver = styled.img`
