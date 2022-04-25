@@ -77,6 +77,7 @@ height:100vh;
 width:100vw;
 `;
 
+//overlay card
 const ResultCont = styled.div`
 display:flex;
 flex-direction:column;
@@ -89,23 +90,21 @@ height:600px;
 padding:1rem;
 border-radius:8px;
 background:#FFF;
-border: pink 2px solid;
+border: lightgrey 2px solid;
 `;
 
 const ResultImg = styled.img`
 width:30vw;
 height:30vh;
-border: green 2px solid;
 `;
 
+//text not with in cont??
 const H1Cont = styled.div`
-display:flex;
-flex-direction:column;
-margin-bottom:4rem;
-border: green 2px solid;
+border: 2px red solid
 `;
 
 const H1 = styled.text`
+font-size: 24px;
 font-family:Ubuntu;
 padding:0;
 `;
@@ -115,17 +114,15 @@ position:relative;
 display:flex;
 justify-content:end;
 align-items:center;
-border:blue 2px solid;
-width:20rem;
+width:inherit;
+padding-right 1em;
 `;
 
 const X = styled.text`
-display:flex;
-justify-content:center;
-align-item:center;
-color:#FFF;
+color: white;
 height:44px;
 width:44px;
+padding-right:1em;
 border-radius:30px;
 background:crimson;
 `;
@@ -137,12 +134,15 @@ color:white;
 background:#871010;
 border-radius:4px;
 border:none;
+font-family:inherit;
+font-size: 15px;
+font-weight: 500;
 `;
 
 const SelectCont = styled.div`.
 position:relative;
 display:flex;
 justify-content:end;
-border:blue 2px solid;
-width:20rem;
+width:inherit;
+padding-right: 1em;
 `;
