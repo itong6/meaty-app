@@ -28,18 +28,16 @@ export default function Results(){
                     }><img src="/x.svg"/></X>
                 </XCont>
 
-                <H1Cont>
-                    <H1>
-                        {animalresults[item].header}
-                        <h4>{animalresults[item].latin}</h4>
-                    </H1>
-                </H1Cont>
+                <HeadCont>
+                    <H1>{animalresults[item].header}</H1>
+                        <Latin>{animalresults[item].latin}</Latin>
+                </HeadCont>
 
                 <ResultImg src={animalresults[item].img} />
 
-                <p>
+                <P>
                     {animalresults[item].desc}
-                </p>
+                </P>
                 <SelectCont>
                     <Select onClick={
                             ()=>r.push({
@@ -70,7 +68,6 @@ position:absolute;
 display:flex;
 justify-content:center;
 align-items:center;
-border:blue 2px solid;
 top:0;
 left:0;
 height:100vh;
@@ -90,23 +87,35 @@ height:600px;
 padding:1rem;
 border-radius:8px;
 background:#FFF;
-border: lightgrey 2px solid;
 `;
 
 const ResultImg = styled.img`
-width:30vw;
-height:30vh;
+width:40vw;
+height:40vh;
 `;
 
 //text not with in cont??
-const H1Cont = styled.div`
-border: 2px red solid
+const HeadCont = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:70vw;
+height:20vh;
 `;
 
 const H1 = styled.text`
-font-size: 24px;
+text-align:center;
+font-size: 30px;
 font-family:Ubuntu;
-padding:0;
+font-weight:500;
+margin-bottom:1rem;
+`;
+
+const Latin = styled.text`
+font-family:Ubuntu;
+font-size:24px;
+font-style:italic;
 `;
 
 const XCont = styled.div`
@@ -145,4 +154,12 @@ display:flex;
 justify-content:end;
 width:inherit;
 padding-right: 1em;
+`;
+
+const P = styled.text`
+font-family:Ubuntu;
+font-seize:20px;
+font-weight:500;
+margin-bottom:0.5rem;
+margin-top:1rem;
 `;

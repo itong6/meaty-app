@@ -2,19 +2,21 @@ export const animalresults = {
     chicken:{
         img:"../ch/default/ch_default1.svg",
         header:"Chicken",
-        latin:"Gallus domesticus",
+        latin:"(Gallus domesticus)",
         desc:" A chicken is a bird. One of the features that differentiate’s it from most other birds is that it has a red comb and two red wattles under it’s beak. ",
         select:"Select Chicken"
     },
     cow:{
         img:"../cow/default/c_default1.svg",
         header:"Cow",
+        latin:"(Bos taurus)",
         desc:"Cows are four-footed and have a large body. It has two horns, two eyes plus two ears and one nose and a mouth. Cows are herbivorous animals. They have a lot of uses to mankind.",
         select:"Select Cow"
     },
     pig:{
         img:"../pig/default/p_default1.svg",
         header:"Pig",
+        latin:"(Sus domesticus)",
         desc:"Pigs are stoud-bodied,short-legged, omnivorous mammals. They are highly intelligent and social animals, and are found all over the globe.",
         select:"Select Pig"
     },
