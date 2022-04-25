@@ -16,19 +16,44 @@ export default function Meat(){
     display:flex;
     flex-direction:column;
     align-items:center;
-
     `;
+
+    const DescCont = styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    padding:2rem;
+    text-align:center;
+    `;
+
     const HeadCont = styled.div`
     display:flex;
     flex-direction:column;
     align-items:start;
     margin-top:1rem;
+    margin-left:2rem;
     `;
     const P = styled.text`
+    font-family:Ubuntu;
+    font-size:20px;
+    font-weight:400;
     margin-top:0.5rem;
     `;
     const H1 = styled.text`
+    font-family:Ubuntu;
+    font-size:36px;
+    font-weight:500;
     margin-bottom:0;
+    `;
+
+    const H0 = styled.text`
+    font-family:Ubuntu;
+    font-size:36px;
+    font-weight:600;
+    margin-bottom:2rem;
     `;
 
     const SettingCont = styled.div`
@@ -67,13 +92,11 @@ export default function Meat(){
     margin-top: 3rem;
     width:500px;
     height:450px;
-    border: pink solid 2px;
     `;
 
     const BathChicken = styled.img`
     position:absolute;
     top:250px;
-    border:red 2px solid;
     height:30vh;
     width:100vw;
     `;
@@ -82,13 +105,11 @@ export default function Meat(){
     top:0;
     width:100vw;
     height:70vh;
-    border: green 2px solid;
     `;
 
     const BathChicken2 = styled.img`
     position:absolute;
     top:13rem;
-    border:red 2px solid;
     height:340px;
     width:100vw;
     z-index:-1;
@@ -100,7 +121,6 @@ export default function Meat(){
     width:100vw;
     height:70vh;
     opacity:95%;
-    border: green 2px solid;
     `;
 
     const ChKillCont = styled.div`
@@ -109,7 +129,6 @@ export default function Meat(){
     right:-90px;
     width:100vw;
     height:70vh;
-    border:blue solid 2px;
     `;
 
     const KnifeChicken = styled.img`
@@ -117,7 +136,6 @@ export default function Meat(){
     width:500px;
     height:500px;
     padding:0rem;
-    border:green solid 2px;
     `;
 
     const Knife = styled.img`
@@ -126,7 +144,6 @@ export default function Meat(){
     top:13rem;
     width:200px;
     height:200px;
-    border:red 2px solid;
     `;
 
     const Knife2 = styled.img`
@@ -136,14 +153,12 @@ export default function Meat(){
     right:13rem;
     width:200px;
     height:200px;
-    border:red 2px solid;
     `;
 
     const PluckChicken = styled.img`
     width:500px;
     height:500px;
     padding:0rem;
-    border:green solid 2px;
     `;
 
     const Feathers = styled.img`
@@ -183,7 +198,6 @@ export default function Meat(){
     top:21rem;
     height:100px;
     width:150px;
-    border:green solid 2px;
     `;
 
 
@@ -194,14 +208,12 @@ export default function Meat(){
     right:-90px;
     width:100vw;
     height:70vh;
-    border:blue solid 2px;
     `;
 
     const GunCow = styled.img`
     width:375px;
     height:375px;
     padding:0rem;
-    border:green solid 2px;
     `;
 
     const Gun = styled.img`
@@ -210,7 +222,6 @@ export default function Meat(){
     right:0;
     width:300px;
     height:300px;
-    border:red 2px solid;
     `;
 
     const Gun2 = styled.img`
@@ -220,7 +231,6 @@ export default function Meat(){
     right:0;
     width:300px;
     height:300px;
-    border:red 2px solid;
     `;
 
     const TargetZone = styled.div`
@@ -230,14 +240,12 @@ export default function Meat(){
     height:40px;
     width:40px;
     border-radius:50px;
-    border: red 2px solid;
     `;
 
     const KnifeCow = styled.img`
     width:500px;
     height:500px;
     padding:0rem;
-    border:green solid 2px;
     `;
 
     const DecapitateCow = styled.img`
@@ -251,7 +259,6 @@ export default function Meat(){
     width:100px;
     height:190px;
     border-radius:40px;
-    border:green solid 2px;
     `;
 
     const ChamberPig = styled.img`
@@ -260,7 +267,6 @@ export default function Meat(){
     width:200px;
     height:200px;
     padding:0rem;
-    border:green solid 2px;
     `;
 
     const Chamber = styled.img`
@@ -268,7 +274,6 @@ export default function Meat(){
     width:300px;
     height:300px;
     padding:1rem;
-    border:green solid 2px;
     `;
 
     const ChamberDoorZone = styled.div`
@@ -277,14 +282,12 @@ export default function Meat(){
     right:7rem;
     width:80px;
     height:200px;
-    border:blue 2px solid;
     `;
 
     const KnifePig = styled.img`
     width:400px;
     height:400px;
     padding:0rem;
-    border:green solid 2px;
     `;
 
     const OrganZonePig = styled.div`
@@ -293,9 +296,47 @@ export default function Meat(){
     width:120px;
     height:190px;
     border-radius:40px;
-    border:green solid 2px;
     `;
 
+    const DesclaimerButton = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:341px;
+    height:40px;
+    color:#FFF;
+    background:#871010;
+    border-radius:4px;
+    border:none;
+    `;
+
+    const Logo = styled.text`
+    font-family:Puritan;
+    font-size:64px;
+    font-weight:1000;
+    margin-bottom:1rem;
+    `;
+
+    const StartButton = styled.button`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:79px;
+    height:40px;
+    background:#871010;
+    border-radius:4px;
+    border:none;
+    color:#FFF;
+    margin-bottom:25rem;
+    `;
+
+    const Splash = styled.img`
+    position:absolute;
+    object-fit:cover;
+    z-index:-1;
+    width:100vw;
+    height:100vh;
+    `;
 
     // -------------
     // Styled components for end pages
@@ -491,17 +532,17 @@ export default function Meat(){
 
 
     if(page === '2'){
-        return <div>
-            <h1>{heading[1]}</h1>
-            <button onClick={
+        return <DescCont>
+            <H0>{heading[1]}</H0>
+            <DesclaimerButton onClick={
                 ()=>r.push({
                     pathname:"meat",
                     query:{
                      page:Number(page)+1
                     }
                 })
-            }>{button[1]}</button>
-        </div>
+            }>{button[1]}</DesclaimerButton>
+        </DescCont>
     }
 
     if(page === '3'){
@@ -1814,17 +1855,17 @@ export default function Meat(){
 
 
 
-    return <div>
+    return <DescCont>
 
         {
-            page === undefined ? <h1>{heading[0]}</h1> : <h1>{heading[0]}</h1>
+            page === undefined ? <Logo>{heading[0]}</Logo> : <Logo>{heading[0]}</Logo>
         }
 
         {/* <button onClick={
             ()=>console.log(r)
         }> Console log router</button> */}
 
-        <button onClick={
+        <StartButton onClick={
             ()=>r.push({
                 pathname:"/meat",
                 query:{
@@ -1832,9 +1873,9 @@ export default function Meat(){
                     type:"home"
                 }
             })
-        }>{button[0]}</button>
-
-    </div>
+        }>{button[0]}</StartButton>
+        <Splash src ='../splash.svg' />
+    </DescCont>
 
 }
 
