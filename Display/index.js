@@ -19,8 +19,8 @@ display:flex;
 flex-direction:column;
 align-item:center;
 justify-content:center;
-width:160px;
-height:160px;
+width:130px;
+height:130px;
 border:#000000 solid 3px;
 border-radius:20px;
 margin:1rem;
@@ -42,8 +42,9 @@ display:flex;
 font-family: Ubuntu;
 justify-content:center;
 margin-bottom:1rem;
-font-size: 24px;
+font-size: 16px;
 font-weight: bold; 
+align-text:center;
 `;
 
 export default function Display({
@@ -64,7 +65,7 @@ export default function Display({
           }
         })
       }>
-      {/* <DispTitle>{catImgs[i].title}</DispTitle> */}
+      <DispTitle>{o.title}</DispTitle>
       <DispImg src={o.img} />
       </ImgCont>)
     }

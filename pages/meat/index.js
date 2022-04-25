@@ -33,7 +33,7 @@ export default function Meat(){
     display:flex;
     flex-direction:column;
     align-items:start;
-    margin-top:1rem;
+    margin-top:0rem;
     margin-left:2rem;
     `;
     const P = styled.text`
