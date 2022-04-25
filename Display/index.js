@@ -2,17 +2,18 @@ import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { catImgs } from '../data/selection_content';
 
-
+//The container in which the image cards sit in
 const DispCont = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
+justify-content: center;
 height:82vh;
-width:41vw;
-
-border: red 2px solid;
+width:35vw;
 `;
 
+
+//The image cards
 const ImgCont = styled.div`
 display:flex;
 flex-direction:column;
@@ -22,22 +23,27 @@ width:160px;
 height:160px;
 border:#000000 solid 3px;
 border-radius:20px;
-margin-bottom:2rem;
-margin-left:2rem;
+margin:1rem;
 padding:2rem;
 `;
 
+
+//image within the card
 const DispImg = styled.img`
 object-fit:cover
 width:100%;
 height:100%;
 `;
 
+
+//title within the card
 const DispTitle = styled.text`
 display:flex;
 font-family: Ubuntu;
 justify-content:center;
 margin-bottom:1rem;
+font-size: 24px;
+font-weight: bold; 
 `;
 
 export default function Display({

@@ -16,6 +16,7 @@ export default function Meat(){
     display:flex;
     flex-direction:column;
     align-items:center;
+
     `;
     const HeadCont = styled.div`
     display:flex;
