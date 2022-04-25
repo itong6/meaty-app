@@ -15,7 +15,13 @@ export const subheading = [
     "Defeather Claudia by clicking her feathers",
     "Click on the cleaver until Claudia is decapitated",
     "Disembowel Claudia by clicking on the organs",
-    "Click the target on Nellie's head."
+    "Click the target on Nellie's head.",
+    "Click on the cleaver until Nellie is decapitated",
+    "Disembowel Nellie by clicking on the organs",
+    "Open the CO2 Chamber by clicking on the door.",
+    "Click on Waddles to put him in the chamber.",
+    "Close the door by clicking the chamber door.",
+    "Well done, you may continue."
 ]
 
 export const button = [
