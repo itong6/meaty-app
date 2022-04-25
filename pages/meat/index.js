@@ -2,7 +2,7 @@ import {useRouter} from 'next/router';
 import {settings,cat0Imgs, cat1Imgs, cat2Imgs, chicken1Imgs,cow1Imgs, pig1Imgs } from '../../data/selection_content';
 import Display from '../../Display';
 import Results from './results';
-import { heading, subheading, button, chicken_indicator } from '../../data/content';
+import { heading, subheading, button, chicken_indicator, indicator } from '../../data/content';
 import styled from 'styled-components'
 import { keyframes } from 'styled-components';
 import { motion } from 'framer-motion'
@@ -131,7 +131,7 @@ export default function Meat(){
     const Knife2 = styled.img`
     position:absolute;
     transform:rotate(30deg);
-    top:28rem;
+    top:25rem;
     right:13rem;
     width:200px;
     height:200px;
@@ -184,6 +184,76 @@ export default function Meat(){
     width:150px;
     border:green solid 2px;
     `;
+
+
+    const CowKillCont = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right:-90px;
+    width:100vw;
+    height:70vh;
+    border:blue solid 2px;
+    `;
+
+    const GunCow = styled.img`
+    width:375px;
+    height:375px;
+    padding:0rem;
+    border:green solid 2px;
+    `;
+
+    const Gun = styled.img`
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:300px;
+    height:300px;
+    border:red 2px solid;
+    `;
+
+    const Gun2 = styled.img`
+    position:absolute;
+    z-index:-1;
+    bottom:0;
+    right:0;
+    width:300px;
+    height:300px;
+    border:red 2px solid;
+    `;
+
+    const TargetZone = styled.div`
+    position:absolute;
+    top:13rem;
+    right:8rem;
+    height:40px;
+    width:40px;
+    border-radius:50px;
+    border: red 2px solid;
+    `;
+
+    const KnifeCow = styled.img`
+    width:500px;
+    height:500px;
+    padding:0rem;
+    border:green solid 2px;
+    `;
+
+    const DecapitateCow = styled.img`
+    width:475px;
+    height:475px;
+    `;
+
+    const OrganZoneCow = styled.div`
+    position:absolute;
+    top:14.5rem;
+    width:100px;
+    height:190px;
+    border-radius:40px;
+    border:green solid 2px;
+    `;
+
+
 
     // -------------
     // Styled components for end pages
@@ -377,6 +447,7 @@ export default function Meat(){
 
     // Page content starts below
 
+
     if(page === '2'){
         return <div>
             <h1>{heading[1]}</h1>
@@ -539,6 +610,319 @@ export default function Meat(){
         
     }
 
+    if(type === "Stun Gun"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[0]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[10]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <GunCow src="../stun_methods/cow/gun1.svg" />
+                <Gun src='../weapons/held gun.svg' />
+                <TargetZone onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Stun Gun2',
+                        }
+                    })
+                }/>
+            </ChKillCont>
+        </div>
+        
+    }
+
+    if(type === "Stun Gun2"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[1]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[10]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <GunCow src="../stun_methods/cow/front_stunned.svg" />
+                <Gun2 src='../weapons/held gun.svg' />
+            </ChKillCont>
+            <ContinueCont>
+            <Continue  onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Knife Cow',
+                        }
+                    })
+                }>{button[3]}</Continue>
+        </ContinueCont>
+        </div>
+        
+    }
+
+    if(type === "Knife Cow"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[1]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[6]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <KnifeCow src="../cow/knife/stunned.svg" />
+                <Knife src='../weapons/knife.svg' onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Knife Cow 2',
+                        }
+                    })
+                }  />
+            </ChKillCont>
+        </div>
+        
+    }
+
+    if(type === "Knife Cow 2"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[2]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[6]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <KnifeCow src="../cow/knife/slit_throat.svg" />
+                <Knife2 src='../weapons/knife.svg' />
+            </ChKillCont>
+        <ContinueCont>
+            <Continue  onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Decapitate Cow',
+                        }
+                    })
+                }>{button[3]}</Continue>
+        </ContinueCont>
+        </div>
+        
+    }
+
+    if(type === "Decapitate Cow"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[2]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[8]}</P>
+            </HeadCont>
+            <CowKillCont>
+                <DecapitateCow src="../cow/knife/slit_throat.svg" />
+                <Cleaver src='../weapons/cleaver.svg' onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Decapitate Cow 2',
+                        }
+                    })
+                }  />
+            </CowKillCont>
+        </div>
+    }
+
+    if(type === "Decapitate Cow 2"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[2]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[8]}</P>
+            </HeadCont>
+            <CowKillCont>
+                <DecapitateCow src="../cow/knife/slit_throat.svg" />
+                <Cleaver src='../weapons/bloody_cleaver.svg' onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Decapitate Cow 3',
+                        }
+                    })
+                }  />
+            </CowKillCont>
+        </div>
+    }
+
+    if(type === "Decapitate Cow 3"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[3]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[8]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <DecapitateCow src="../cow/decapitate/decapitate.svg" />
+                <Cleaver src='../weapons/bloody_cleaver.svg' />
+            </ChKillCont>
+            <ContinueCont>
+            <Continue  onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Disembowel Cow',
+                        }
+                    })
+                }>{button[3]}</Continue>
+        </ContinueCont>
+        </div>
+    }
+
+    if(type === "Disembowel Cow"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[3]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[9]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <DisembowelChicken src="../cow/disembowel/disembowel_organs.svg" />
+                <OrganZoneCow onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'Disembowel Cow 2',
+                        }
+                    })
+                } />
+            </ChKillCont>
+        </div>
+    }
+
+    if(type === "Disembowel Cow 2"){
+        return <div>
+            <SettingCont>
+                <div onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            page:1,
+                        }
+                    })
+                }> <img src='/settings.svg' /></div>
+            </SettingCont>
+            <IndicatorCont>
+                <img src={indicator[4]} />
+            </IndicatorCont>
+            <HeadCont>
+                <H1>{heading[2]}</H1>
+                <P>{subheading[9]}</P>
+            </HeadCont>
+            <ChKillCont>
+                <DisembowelChicken src="../cow/disembowel/disembowel.svg" />
+            </ChKillCont>
+            <ContinueCont>
+            <Continue  onClick={
+                    ()=>r.push({
+                        pathname:"/meat",
+                        query:{
+                            type:'',
+                        }
+                    })
+                }>{button[3]}</Continue>
+        </ContinueCont>
+        </div>
+    }
+
     if(type === "Bath"){
         return <div>
             <SettingCont>
@@ -559,8 +943,8 @@ export default function Meat(){
                 <P>{subheading[5]}</P>
             </HeadCont>
         <BathCont>
-            <Bath src="../stun_methods/bath_1.svg" />
-            <BathChicken src="../stun_methods/bath_chicken2.svg" onClick={
+            <Bath src="../stun_methods/ch/bath_1.svg" />
+            <BathChicken src="../stun_methods/ch/bath_chicken2.svg" onClick={
                     ()=>r.push({
                         pathname:"/meat",
                         query:{
@@ -593,8 +977,8 @@ export default function Meat(){
                 <P>{subheading[5]}</P>
         </HeadCont>
         <BathCont>
-            <Bath2 src="../stun_methods/bath_1.svg" />
-            <BathChicken2 src="../stun_methods/bath_chicken2.svg"/>
+            <Bath2 src="../stun_methods/ch/bath_1.svg" />
+            <BathChicken2 src="../stun_methods/ch/bath_chicken2.svg"/>
         </BathCont>
         <ContinueCont>
             <Continue  onClick={
@@ -631,7 +1015,7 @@ export default function Meat(){
             </HeadCont>
             <ChKillCont>
                 <KnifeChicken src="../ch/knife/stunned2.svg" />
-                <Knife src='../ch/knife/knife.svg' onClick={
+                <Knife src='../weapons/knife.svg' onClick={
                     ()=>r.push({
                         pathname:"/meat",
                         query:{
@@ -665,7 +1049,7 @@ export default function Meat(){
             </HeadCont>
             <ChKillCont>
                 <KnifeChicken src="../ch/knife/slit_throat.svg" />
-                <Knife2 src='../ch/knife/knife.svg' />
+                <Knife2 src='../weapons/knife.svg' />
             </ChKillCont>
         <ContinueCont>
             <Continue  onClick={
