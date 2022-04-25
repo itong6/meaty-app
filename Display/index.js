@@ -58,7 +58,7 @@ export default function Display({
           }
         })
       }>
-      <DispTitle>{catImgs[i].title}</DispTitle>
+      {/* <DispTitle>{catImgs[i].title}</DispTitle> */}
       <DispImg src={o.img} />
       </ImgCont>)
     }
