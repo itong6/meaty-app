@@ -408,7 +408,7 @@ export default function Meat(){
 
     p {
       margin-top: 0rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.4rem;
     }
   }
   .tile2:hover {
@@ -431,6 +431,10 @@ export default function Meat(){
       margin-top: 0;
       margin-bottom: 2rem
     }
+
+		.lastLine {
+			margin-bottom: 4rem;
+		}
   }
 
   /* Third tile styling */
@@ -464,9 +468,9 @@ export default function Meat(){
     }
     
     p {
-      margin-top: 0rem;
-      margin-bottom: 1rem;
-      margin-left: 2.5rem;
+			margin-bottom: 1rem;
+      margin-left: 2rem;
+			margin-right: 2rem
       font-size: 1.25rem;
       font-weight: bold;
     }
@@ -1025,7 +1029,7 @@ export default function Meat(){
                     ()=>r.push({
                         pathname:"/meat",
                         query:{
-                            type:'',
+                            type:'end3',
                         }
                     })
                 }>{button[3]}</Continue>
@@ -1338,7 +1342,7 @@ export default function Meat(){
                     ()=>r.push({
                         pathname:"/meat",
                         query:{
-                            type:'',
+                            type:'end2'
                         }
                     })
                 }>{button[3]}</Continue>
@@ -1700,7 +1704,7 @@ export default function Meat(){
                     ()=>r.push({
                         pathname:"/meat",
                         query:{
-                            page:1,
+                            type: 'end2'
                         }
                     })
                 }> <img src='/settings.svg' /></div>
@@ -1811,6 +1815,209 @@ export default function Meat(){
     }
 
     // Cow
+    if (type === 'end2') {
+        return <Container>
+
+            {/* First tile for cow */}
+            <motion.div className='tile' initial='onLoad' animate='visible' variants={{
+                onLoad: {
+                    scale: .4,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .3
+                    }
+                }
+            }}>
+                <div className='firstTile' onClick={() => alertCow()}>
+                    <h2>Congrats!</h2>
+                    <h3>Nellie is dead.</h3>
+                    <p className='emoji'>🐮 💀 🍔</p>
+                    <p>Want to slaughter another animal?</p>
+                    <button onClick={() => r.push({
+                        pathname: '/meat'
+                    })}>RESTART</button>
+                </div>
+            </motion.div>
+
+            {/* Second tile for cow*/}
+            <motion.div className='tile2' initial='onLoad' animate='visible' variants={{
+                onLoad: {
+                    scale: .4,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .35
+                    }
+                }
+            }}>
+                <div className='secondTile'>
+                    <h3>The Cow</h3>
+                    <h4>By Ogden Nash</h4>
+                    <p>The cow is of the bovine ilk; </p>
+                    <p>One end is moo, the other, milk</p>
+                </div>
+            </motion.div>
+
+            {/* Third tile for cow*/}
+            <motion.div className='tile3' initial='onLoad' animate='visible' variants={{
+                onLoad: {
+                    scale: .4,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .35
+                    }
+                }
+            }}>
+                <div className='thirdTile'>
+                    <h1>Did you know...</h1>
+                    <p><a href='https://www.aipl.arsusda.gov/kc/cowfacts.html' target='_blank'>...the first cow arrived in North America in 1611?</a></p>
+                    <p><a href='https://www.britannica.com/animal/cow' target='_blank'>... both female and male cows have horns?</a></p>
+                    <p><a href='https://www.coolkidfacts.com/cow-facts/' target='_blank'>... cows eat their "vomit" multiple times to digest food?</a></p>
+                    <p className='learnMore'><a href='https://en.wikipedia.org/wiki/Cattle' target='_blank'>Learn more about cows</a></p>
+                </div>
+            </motion.div>
+        </Container>
+    }
+    
+    // Pig
+    if (type === 'end3') {
+        return <Container>
+
+            {/* First tile for pig */}
+            <motion.div className='tile' initial='onLoad' animate='visible' variants={{
+                onLoad: {
+                    scale: .4,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .3
+                    }
+                }
+            }}>
+                <div className='firstTile' onClick={() => alertPig()}>
+                    <h2>Congrats!</h2>
+                    <h3>Waddles is dead.</h3>
+                    <p className='emoji'>🐷 💀 🍔</p>
+                    <p>Want to slaughter another animal?</p>
+                    <button onClick={() => r.push({
+                        pathname: '/meat'
+                    })}>RESTART</button>
+                </div>
+            </motion.div>
+
+            {/* Second tile for pig */}
+            <motion.div className='tile2' initial='onLoad' animate='visible' variants={{
+                onLoad: {
+                    scale: .4,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .35
+                    }
+                }
+            }}>
+                <div className='secondTile'>
+                    <h3>The Pig</h3>
+                    <h4>By Roald Dahl</h4>
+                    <p>In England once there lived a big</p>
+                    <p>A wonderfully clever pig.</p>
+                    <p>To everybody it was plain</p>
+                    <p>That Piggy had a massive brain.</p>
+                    <p>There was no book he hadn't read.</p>
+                    <p>He worked out sums inside his head.</p>
+                    <p>He knew how engines worked and why.</p>
+                    <p>He knew all this, but in the end</p>
+                    <p>One question drove him round the bend: </p>
+                    <p>He simply couldn't puzzle out</p>
+                    <p className='lastLine'>What LIFE was really all about.</p>
+
+                    <p>What was the reason for his birth?</p>
+                    <p>Why was he placed upon this earth?</p>
+                    <p>His giant brain went round and round.</p>
+                    <p>Alas, no answer could be found.</p>
+                    <p>Till suddenly one wondrous night.</p>
+                    <p>All in a flash he saw the light.</p>
+                    <p>He jumped up like a ballet dancer</p>
+                    <p>And yelled, "By gum, I've got the answer!"</p>
+                    <p>"They want my bacon slice by slice</p>
+                    <p>"To sell at a tremendous price!</p>
+                    <p>"They want my tender juicy chops</p>
+                    <p>"To put in all the butcher's shops!</p>
+                    <p>"They want my pork to make a roast</p>
+                    <p>"And that's the part'll cost the most!</p>
+                    <p>"They want my sausages in strings!</p>
+                    <p>"They even want my chitterlings!</p>
+                    <p>"The butcher's shop! The carving knife!</p>
+                    <p className='lastLine'>"That is the reason for my life!"</p>
+                    <div> </div>
+
+                    <p>Such thoughts as these are not designed</p>
+                    <p>To give a pig great peace of mind.</p>
+                    <p>Next morning, in comes Farmer Bland,</p>
+                    <p>A pail of pigswill in his hand,</p>
+                    <p>And piggy with a mighty roar,</p>
+                    <p>Bashes the farmer to the floor…</p>
+                    <p>Now comes the rather grizzly bit</p>
+                    <p>So let's not make too much of it,</p>
+                    <p>Except that you must understand</p>
+                    <p>That Piggy did eat Farmer Bland,</p>
+                    <p>He ate him up from head to toe,</p>
+                    <p>Chewing the pieces nice and slow.</p>
+                    <p>It took an hour to reach the feet,</p>
+                    <p>Because there was so much to eat,</p>
+                    <p>And when he finished, Pig, of course,</p>
+                    <p className='lastLine'>Felt absolutely no remorse.</p>
+
+                    <p>Slowly he scratched his brainy head</p>
+                    <p>And with a little smile he said,</p>
+                    <p>"I had a fairly powerful hunch</p>
+                    <p>"That he might have me for his lunch.</p>
+                    <p>"And so, because I feared the worst,</p>
+                    <p className='lastLine'>"I thought I'd better eat him first."</p>
+                </div>
+            </motion.div>
+
+            {/* Third tile for pig */}
+            <motion.div className='tile3' initial='onLoad' animate='visible' variants={{
+                onLoad: {
+                    scale: .4,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .35
+                    }
+                }
+            }}>
+                <div className='thirdTile'>
+                    <h1>Did you know...</h1>
+                    <p><a href='https://www.aipl.arsusda.gov/kc/cowfacts.html' target='_blank'>...the first cow arrived in North America in 1611?</a></p>
+                    <p><a href='https://www.britannica.com/animal/cow' target='_blank'>... both female and male cows have horns?</a></p>
+                    <p><a href='https://www.coolkidfacts.com/cow-facts/' target='_blank'>... cows eat their "vomit" multiple times to digest food?</a></p>
+                    <p className='learnMore'><a href='https://en.wikipedia.org/wiki/Cattle' target='_blank'>Learn more about cows</a></p>
+                </div>
+            </motion.div>
+        </Container>
+    }
 
 
 
@@ -1840,5 +2047,11 @@ export default function Meat(){
 
 // Functions for end screens
 export function alertChicken() {
-    alert("You're a bad person.");
+    alert("Cluck you!");
+}
+export function alertCow() {
+    alert("You're a milk dud.");
+}
+export function alertPig() {
+    alert("You a pig fr");
 }
