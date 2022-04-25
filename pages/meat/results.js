@@ -10,14 +10,15 @@ export default function Results(){
     const {page, type, item} = r.query;
 
     if(item === undefined){return null}
-    return<div>
+    return<ResultContCont >
+    
         <Overlay onClick={
             ()=>r.push({pathname:'/meat', query:{
                 type:type,
                 page:page
             }})
         }></Overlay>
-        <ResultContCont >
+        
             <ResultCont>
             <XCont>
                     <X onClick={
@@ -25,7 +26,7 @@ export default function Results(){
                             type:type,
                             page:page
                         }})
-                    }><img src="/x.svg"/></X>
+                    }><XImg src="/x.svg"/></X>
                 </XCont>
 
                 <HeadCont>
@@ -51,7 +52,7 @@ export default function Results(){
             </ResultCont>
         </ResultContCont>
 
-    </div>
+    
 }
 
 const Overlay = styled.div`
@@ -61,6 +62,7 @@ height:100vh;
 width:100vw;
 left:0;
 top:0;
+z-index:-1;
 `;
 
 const ResultContCont = styled.div`
@@ -82,8 +84,8 @@ justify-content:center;
 align-items:center;
 top:60px;
 left:15vw;
-width:396px;
-height:600px;
+width:350px;
+height:520px;
 padding:1rem;
 border-radius:8px;
 background:#FFF;
@@ -129,11 +131,15 @@ padding-right 1em;
 
 const X = styled.text`
 color: white;
-height:44px;
-width:44px;
+height:30px;
+width:30px;
 padding-right:1em;
 border-radius:30px;
-background:crimson;
+`;
+
+const XImg = styled.img`
+width:30px;
+height:30px;
 `;
 
 const Select = styled.button`
