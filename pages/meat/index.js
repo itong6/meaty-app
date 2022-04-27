@@ -102,7 +102,7 @@ export default function Meat(){
 
     const BathChicken = styled.img`
     position:absolute;
-    top:18rem;
+    top:17rem;
     height:30vh;
     width:100vw;
     `;
@@ -115,7 +115,7 @@ export default function Meat(){
 
     const BathChicken2 = styled.img`
     position:absolute;
-    top:12rem;
+    top:14rem;
     height:340px;
     width:100vw;
     z-index:-1;
@@ -2111,3 +2111,5 @@ export function alertCow() {
 export function alertPig() {
     alert("You a pig fr");
 }
+
+//pls 
